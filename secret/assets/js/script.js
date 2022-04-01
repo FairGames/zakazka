@@ -7,7 +7,7 @@ function openSocial(type) {
 
   switch (type) {
     case 'discord':
-      url = 'https://discord.com/users/852778406629605396';
+      url = 'https://discord.com/secret';
       break;
     case 'github':
       url = 'https://github.com/secret';
@@ -41,10 +41,10 @@ function typerStartTyping(typer) {
 
   text.forEach(function (language, index) {
     typer.move(null);
-    typer.type(language, { delay: 100 });
+    typer.type(language, { delay: 1000 });
     typer.pause(6000);
 
-    typer.delete(language.length, { delay: 100 });
+    typer.delete(language.length, { delay: 1000 });
   });
 
   typer.go();
